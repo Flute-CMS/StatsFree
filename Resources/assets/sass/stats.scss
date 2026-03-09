@@ -1,0 +1,60 @@
+.stats-free {
+    .stats__cell-player {
+        @extend .flex-center, .gap-3;
+
+        justify-content: flex-start;
+        width: max-content;
+
+        img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            transition: var(--transition)
+        }
+
+        &-text {
+            @extend .d-flex, .flex-column;
+
+            span {
+                font-weight: 500;
+                font-size: var(--p);
+                line-height: 1.7;
+                color: var(--text-300);
+            }
+
+            small {
+                line-height: 1.5;
+            }
+        }
+
+        &:hover {
+            img {
+                filter: brightness(.8);
+            }
+
+            span {
+                color: var(--text);
+            }
+        }
+    }
+
+    .stats__cell-rank {
+        text-align: center;
+
+        img {
+            max-width: 40px;
+            max-height: 40px;
+            object-fit: contain;
+        }
+    }
+
+    .stats__cell-kd {
+        font-weight: 600;
+        color: var(--bs-success);
+
+        &.negative {
+            color: var(--bs-danger);
+        }
+    }
+}

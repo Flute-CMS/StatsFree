@@ -1,0 +1,12 @@
+{
+    "name": "StatsFree",
+    "version": "1.0.0",
+    "description": "Free module for displaying players statistics with LR support",
+    "authors": [
+        "Flames"
+    ],
+    "providers": [
+        "Flute\\Modules\\StatsFree\\Providers\\StatsFreeProvider"
+    ],
+    "dependencies": {}
+} 
